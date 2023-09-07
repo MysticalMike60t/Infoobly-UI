@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { UnderConstruction } from '../../global'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
             <div className="wrapper__links">
               <Link className="links__Link" to="/docs">Docs</Link>
             </div>
+            <UnderConstruction />
         </div>
     </div>
   )

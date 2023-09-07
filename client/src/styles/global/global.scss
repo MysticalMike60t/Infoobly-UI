@@ -38,6 +38,19 @@ a {
     color: $primary-1;
 }
 
+.under-construction {
+    color: darkred;
+    $i: 50px;
+    width: calc(100% - $i);
+    margin: calc($i / 2);
+    top: $i;
+    padding: 20px;
+    border-radius: 5px;
+    outline: 1px solid darkred;
+    position: relative;
+    background: rgba(255, 200, 200, 0.8);
+}
+
 @import "./header"; // Import the header.scss after global styles
 
 @import "../pages/home.scss"; // Import other styles as needed

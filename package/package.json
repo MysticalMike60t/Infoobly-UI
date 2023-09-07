@@ -1,11 +1,26 @@
 {
   "name": "infoobly-ui",
-  "version": "1.0.0",
-  "description": "UI Elements",
-  "main": "index.js",
+  "version": "1.0.4",
+  "description": "Infoobly UI Library",
+  "main": "./src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production"
   },
-  "author": "",
-  "license": "ISC"
+  "keywords": [
+    "Javascript",
+    "UI",
+    "UX"
+  ],
+  "author": "Caden Finkelstein @ Infoobly",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.22.15",
+    "@babel/preset-env": "^7.22.15",
+    "@babel/preset-react": "^7.22.15",
+    "babel-loader": "^9.1.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
 }

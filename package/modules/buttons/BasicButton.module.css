@@ -1,0 +1,16 @@
+.button {
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 100ms ease all;
+  border-radius: 5px;
+}
+.button:hover {
+  filter: brightness(90%);
+}
+.button[disabled] {
+  cursor: not-allowed;
+  opacity: 0.5;
+}

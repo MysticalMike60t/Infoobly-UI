@@ -1,5 +1,3 @@
-function App() {
+import { BasicButton } from "./modules";
 
-}
-
-module.exports = {};
+export { BasicButton }

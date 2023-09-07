@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./styles/global/global.scss";
 
 import { Layout } from "./components/global";
-import { Docs, Home } from "./components/pages";
+import { Docs, Home, Test } from "./components/pages";
 
 function App() {
   return (
@@ -13,6 +13,9 @@ function App() {
           <Route index element={<Home />} />
           <Route path="docs">
             <Route index element={<Docs />} />
+          </Route>
+          <Route path="test">
+            <Route index element={<Test />} />
           </Route>
         </Route>
       </Routes>

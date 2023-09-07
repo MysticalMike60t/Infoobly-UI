@@ -1,0 +1,23 @@
+.container__page.test {
+    .page__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+
+        .wrapper__title {
+            @include flex-center;
+
+            .title__h1 {
+                color: rgb(250, 250, 250);
+                text-align: center;
+                text-align: center;
+                font-size: 3em;
+
+                span {
+                    color: $primary-1-dark;
+                }
+            }
+        }
+    }
+}

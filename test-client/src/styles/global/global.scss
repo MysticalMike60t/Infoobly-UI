@@ -1,0 +1,44 @@
+@import "vars";
+@import "funcs";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    @include remove-margin-padding;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    @include remove-margin-padding;
+    overflow: hidden;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    @include remove-margin-padding;
+    @include top-left;
+    overflow: hidden;
+    position: absolute;
+    background: rgb(45,45,45);
+}
+
+.container__page {
+    @include remove-margin-padding;
+    @include top-left;
+    margin-top: $header-height;
+    width: 100%;
+    background: green;
+}
+
+a {
+    color: $primary-1;
+}
+
+@import "./header"; // Import the header.scss after global styles
+
+@import "../pages/home.scss"; // Import other styles as needed

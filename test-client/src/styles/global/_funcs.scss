@@ -1,0 +1,16 @@
+@mixin remove-margin-padding {
+    margin: 0;
+    padding: 0;
+}
+@mixin top-left {
+    left: 0;
+    top: 0;
+}
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin transition-default {
+    transition: 100ms ease all;
+}
